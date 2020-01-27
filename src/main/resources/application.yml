@@ -1,0 +1,7 @@
+# Logging configuration
+logging:
+  level:
+    org: info
+  file:
+    name: /Logs/gmodenjavawork/gmodenjavawork.log
+    ##path: /Logs/gmodenjavawork

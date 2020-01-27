@@ -3,6 +3,7 @@ package com.dobatii.gworkummymodernjava.model;
 import java.util.Objects;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,6 +12,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
+@Builder
 public class MessageData {
 	private String messageText;
 
