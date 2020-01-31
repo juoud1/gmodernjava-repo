@@ -14,21 +14,22 @@ import lombok.extern.slf4j.Slf4j;
 public class AppConfiguration {
 	
 	@Bean
-	public ApplicationRunner objectsRunner(ObjectsUtil objects) {
-		return args ->   {
-			objects.useIsNull();
-			objects.useCompare();
-			objects.useRequireNonNull();
-			objects.useEquals();
-			return;
-		};
+	public ApplicationRunner messagingRunner(MessageService service, ObjectsUtil objects) {
 		
-	}
-	
-	@Bean
-	public ApplicationRunner messagingRunner(MessageService service) {
-		
-		return args -> service.getMessages().
+		return args -> {
+				// Working with service
+				log.info("Working with the service".toUpperCase());
+				service.getMessages().
 				forEach(m -> log.info(m.getMessageText()));
+				
+				// Working with new Objects utility
+				log.info("Working with new Objects utility".toUpperCase());
+				objects.useIsNull();
+				objects.useCompare();
+				objects.useRequireNonNull();
+				objects.useEquals();
+				
+				return;
+		};
 	}
 }
