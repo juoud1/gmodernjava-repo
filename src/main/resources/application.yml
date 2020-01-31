@@ -1,5 +1,7 @@
 # Server configuration
 server:  port: 30277
+  servlet:    application-display-name: Modern java new feature sample
+    context-path: /messages
   
 # Spring configuration
 spring: 

@@ -65,7 +65,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>gwork</finalName>
+		<finalName>gwebwork</finalName>
 	</build>
 	
 	<repositories>
