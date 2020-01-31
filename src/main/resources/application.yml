@@ -1,3 +1,23 @@
+spring: 
+  application:
+    name: Modern java new feature sample
+  main:
+    allow-bean-definition-overriding: true
+    banner-mode: log
+  task:
+    execution:
+      thread-name-prefix: gwork-task
+    scheduling:
+      thread-name-prefix:  gwork-task
+      pool:
+        size: 3
+  banner:
+    image:
+      width: 12
+      height: 12
+      location: classpath:dobatiibanner.png
+    location: classpath:dobatiibanner.txt
+
 # Logging configuration
 logging:
   level:
