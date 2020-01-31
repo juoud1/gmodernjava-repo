@@ -1,3 +1,7 @@
+# Server configuration
+server:  port: 30277
+  
+# Spring configuration
 spring: 
   application:
     name: Modern java new feature sample
