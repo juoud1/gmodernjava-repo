@@ -1,0 +1,1 @@
+some samples of general modern Java new functionalities coding by Dobatii's java 11 learning.
