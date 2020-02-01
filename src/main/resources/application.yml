@@ -23,6 +23,7 @@ spring:
       height: 12
       location: classpath:dobatiibanner.png
     location: classpath:dobatiibanner.txt
+  profiles:    active: dev
 
 # Logging configuration
 logging:
