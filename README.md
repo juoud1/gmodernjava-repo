@@ -3,7 +3,7 @@ This project counts many branches such as :
 - master contains some sample of java 11 based maven and spring boot 2.2.
 So it uses Spring ApplicationRunner to run some sample of new java API like as Objects, List.of, etc.
 - featureJava11RestfulSpringBoot is the default branch that show a little sample of spring Restful service.
-Three profiles are defined dev, qa and docker tio allow you to ready test the application.
+Three profiles are defined dev, qa and docker to allow you to ready test the application.
 
 # Profile "docker" : how it works 
 1. clone the project : for more information https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone
