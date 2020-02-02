@@ -8,7 +8,7 @@ Three profiles are defined dev, qa and docker tio allow you to ready test the ap
 # Profile "docker" : how it works 
 1. clone the project : for more information https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone
 2. Checkout branch "featureJava11RestfulSpringBoot"
-3. Build the image
+3. Build the image\n
    $ docker build --tag grestwork-image .
 4. Get all images
    $ docker images
