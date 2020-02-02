@@ -28,3 +28,5 @@ Three profiles are defined dev, qa and docker to allow you to ready test the app
 # Shutdown the application
 Use the following curl command : 
 $ curl -X POST localhost:27730/messages/shutdownApp
+
+NB: You can change 27730 by your own port.
