@@ -8,18 +8,19 @@ Three profiles are defined dev, qa and docker tio allow you to ready test the ap
 # Profile "docker" : how it works 
 1. clone the project : for more information https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone
 2. Checkout branch "featureJava11RestfulSpringBoot"
-3. Build the image\n
+3. Build the image: 
    $ docker build --tag grestwork-image .
-4. Get all images
+4. Get all images :
    $ docker images
-5. Run the image
+5. Run the image :
    $ docker run -d --name grestwork --publish 27730:30277 --memory 120m --cpu-shares 512 grestwork-image
-6. View the log of running container
+6. View the log of running container :
    $ docker logs grestwork
-7. Vill all containers created
+7. Vill all containers created :
    $ docker ps -a
-8. Access the service with postman or navigator
+8. Access the service with postman or navigator :
    Open http://localhost:27730/messages/provinces and http://localhost:27730/messages
-9. Can stop and start the container
+9. Can stop the container :
    $ docker stop grestwork
+10. Can start the container :
    $ docker start grestwork
