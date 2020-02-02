@@ -12,7 +12,7 @@ Three profiles are defined dev, qa and docker to allow you to ready test the app
    $ docker build --tag grestwork-image .
 4. Get all images :
    $ docker images
-5. Run the image :
+5. Run the image (example) :
    $ docker run -d --name grestwork --publish 27730:30277 --memory 120m --cpu-shares 512 grestwork-image
 6. View the log of running container :
    $ docker logs grestwork
