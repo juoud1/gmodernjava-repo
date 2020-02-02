@@ -24,3 +24,7 @@ Three profiles are defined dev, qa and docker to allow you to ready test the app
    $ docker stop grestwork
 10. Can start the container :
    $ docker start grestwork
+
+# Shutdown the application
+Use the following curl command : 
+$ curl -X POST localhost:27730/messages/shutdownApp
