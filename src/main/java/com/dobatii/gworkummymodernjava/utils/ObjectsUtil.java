@@ -32,22 +32,22 @@ public class ObjectsUtil {
 	public void useEquals() {
 		
 		// compare state of 2 nulls
-		MessageData msg = service.getMessage(null).orElseGet(() -> null);
-		log.info("is equals, null message data : {} \nis deppEquals, null message data: {}", Objects.equals(null, msg), 
-				Objects.equals(null, msg));
+//		MessageData msg = service.getMessage(null).orElseGet(() -> null);
+//		log.info("is equals, null message data : {} \nis deppEquals, null message data: {}", Objects.equals(null, msg), 
+//				Objects.equals(null, msg));
 		
 		// compare state of 2 object not null 
-		msg = service.getMessage("Hello world!").orElseGet(() -> null);
-		log.info("is equals, message data : {} \nis deppEquals, message data : {}", Objects.equals(msg, service.getMessages().get(0)), 
-				Objects.equals(msg, service.getMessages().get(0)));
+//		msg = service.getMessage("Hello world!").orElseGet(() -> null);
+//		log.info("is equals, message data : {} \nis deppEquals, message data : {}", Objects.equals(msg, service.getMessages().get(0)), 
+//				Objects.equals(msg, service.getMessages().get(0)));
 	}
 	
 	public void useIsNull() {
-		MessageData msg = service.getMessage(null).orElseGet(() -> null);
-		log.info("is null, message data : {}", Objects.isNull(msg));
-		
-		msg = service.getMessages().get(1);
-		log.info("is null, message data : {}", Objects.isNull(msg));
+//		MessageData msg = service.getMessage(null).orElseGet(() -> null);
+//		log.info("is null, message data : {}", Objects.isNull(msg));
+//		
+//		msg = service.getMessages().get(1);
+//		log.info("is null, message data : {}", Objects.isNull(msg));
 	}
 	
 	public void useRequireNonNull() {

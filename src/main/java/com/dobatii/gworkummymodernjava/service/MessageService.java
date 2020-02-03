@@ -1,11 +1,33 @@
 package com.dobatii.gworkummymodernjava.service;
 
 import java.util.List;
-import java.util.Optional;
-
 import com.dobatii.gworkummymodernjava.model.MessageData;
 
+@FunctionalInterface
 public interface MessageService {
+	
 	public List<MessageData> getMessages();
-	public Optional<MessageData> getMessage(String msgText);
+	
+	enum MessageType {
+		CLASSICAL (1, "That's the classic"),
+		OWNER (2, "");
+		
+		private int index;
+		private String type;
+		
+		MessageType(int index, String type) {
+			this.index = index;
+			this.type = type;
+
+		}
+
+		public int getIndex() {
+			return this.index;
+		}
+
+		public String getType() {
+			return this.type;
+		}
+		
+	}
 }
