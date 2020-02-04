@@ -1,6 +1,5 @@
 package com.dobatii.gworkummymodernjava.utils;
 
-import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -11,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import com.dobatii.gworkummymodernjava.model.MessageData;
 import com.dobatii.gworkummymodernjava.service.MessageService;
+import com.dobatii.gworkummymodernjava.service.ParameteringMessage;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -112,6 +112,21 @@ public class FunctProgrammingUtil {
 		log.info("Using function terminates with success.");
 	} 
 	
-	
+	public void useCustomFunctProg() {
+		log.info("Using custom functional programming starts...");
+		ParameteringMessage pMsge = (String m) -> {
+			log.info("In the method getMessage().");
+			Predicate<MessageData> predicate = msge -> msge.getMessageText()
+														.contains(m); 
+			return service.getMessages().stream()
+				.filter(predicate)
+				.findAny();
+		};
+		
+		log.info("{}", pMsge.getMessage("Dongongo")
+				.orElse(MessageData.builder().messageText("NONE").build())
+				.getMessageText().toUpperCase());
+		log.info("Using custom functional programming terminates with success.");
+	}
 	
 }

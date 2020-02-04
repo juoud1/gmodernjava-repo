@@ -3,8 +3,7 @@ package com.dobatii.gworkummymodernjava.service;
 import java.util.List;
 import com.dobatii.gworkummymodernjava.model.MessageData;
 
-@FunctionalInterface
-public interface MessageService {
+public interface MessageService extends ParameteringMessage {
 	
 	public List<MessageData> getMessages();
 	

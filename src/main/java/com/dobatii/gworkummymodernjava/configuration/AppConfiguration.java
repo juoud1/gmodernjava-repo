@@ -28,6 +28,7 @@ public class AppConfiguration {
 				fpgramming.useConsumer();
 				fpgramming.useSupplier();
 				fpgramming.usePredicate();
+				fpgramming.useCustomFunctProg();
 				
 				// Working with new Objects utility
 				log.info("Working with new Objects utility".toUpperCase());
