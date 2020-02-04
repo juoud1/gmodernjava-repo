@@ -21,7 +21,7 @@ public class MessageRepositoryImpl implements MessageRepository{
 		var builder = MessageData.builder();
 		
 		datas = List.of(builder.messageText("Hello world!").build(),
-						builder.messageText("Hello word from Dongongo's familly!").build());
+						builder.messageText("Hello world from Dongongo's familly!").build());
 		log.info("\n{} data in the repository.".toUpperCase(), datas.size());
 		
 		log.info("message repository ready!".toUpperCase());

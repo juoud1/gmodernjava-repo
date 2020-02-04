@@ -42,5 +42,4 @@ public class MessageServiceImpl implements MessageService {
 		
 		return messageRepository.findOne(msgText);
 	}
-	
 }
